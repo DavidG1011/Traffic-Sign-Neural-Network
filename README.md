@@ -195,6 +195,21 @@ Comparing these images to their originals above, it can be seen that resizing th
 
 Looking at these losses, it's easy to see how the network may have difficulty identifying these images. For example, the stop sign image lost over 93% of its original X pixel value and almost 93% of its original Y pixel value. These high loss resized images could contribute to my findings for prediction accuracy...
 
+---
+
+***Image Qualities***
+
+**Resolution/Distortion:** 
+As mentioned above, resizing the images reduces the resolution or overall image data to a very small percentage. This is probably the most limiting factor when it comes to predicting these images.
+
+**Brightness:**
+Good, very bright. These images were also normalized with the same method as the other image sets.
+
+**Viewing Angle:**
+The angle that the signs are at should be fine for prediction. They are relatively forward facing. 
+
+**Edges:**
+I made sure to crop the images as best as possible to reduce outer edge noise, some extra image data is left, however. 
 
 ---
 
