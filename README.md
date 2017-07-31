@@ -192,6 +192,7 @@ Comparing these images to their originals above, it can be seen that resizing th
 | Speed limit (120km/h) - 119 x 100			   | ~73.11%   		  | ~68.0%          |
 
 
+
 Looking at these losses, it's easy to see how the network may have difficulty identifying these images. For example, the stop sign image lost over 93% of its original X pixel value and almost 93% of its original Y pixel value. These high loss resized images could contribute to my findings for prediction accuracy...
 
 
@@ -210,7 +211,7 @@ Looking at these losses, it's easy to see how the network may have difficulty id
 
 
 
-The model was able to correctly guess 3 of the 5 traffic signs, which gives an accuracy of 60%
+***The model was able to correctly guess 3 of the 5 traffic signs, which gives an accuracy of 60%***
 
 
 
@@ -219,12 +220,14 @@ The model was able to correctly guess 3 of the 5 traffic signs, which gives an a
 | 94.3%               | 60%                  |  - 34.3%  |
 
 
+
 Comparing to my test set accuracy, it performed unfavorably with a 34.3% difference in accuracy. I feel this could be due to how lossy the images were once compressed down to 32x32. If I were to select images again, I would try to find ones with a smaller original size, to reduce the amount of compression. Using different resizing methods in python and using methods such as antialiasing seemed to make no difference in accuracy.
 
 
 This is not as well as I had hoped the model would do, but in viewing the probability distribution for the model, the correct prediction is within the top 5 probabilities of each wrong image.
 
 ---
+
 
 ***The probabilities for each new sign are as follows:***
 
