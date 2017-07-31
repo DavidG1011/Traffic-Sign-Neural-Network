@@ -245,4 +245,4 @@ The model was able to correctly guess 3 of the 5 traffic signs, which gives an a
 
 ***Conclusion:***
 
-***Overall I am pleased with the testing and validation accuracy. I am a little suprised with my new images not doing as well, but the features are being recognized, as evidenced by the probabilities of the correct sign being in the top 5 results. This was a cool exploration into the world of neural networks, and I hope to use what I learned here to make even better models in the future. 
+***Overall I am pleased with the testing and validation accuracy. I am a little suprised with my new images not doing as well, but the features are being recognized, as evidenced by the probabilities of the correct sign being in the top 5 results. This was a cool exploration into the world of neural networks, and I hope to use what I learned here to make even better models in the future.***
