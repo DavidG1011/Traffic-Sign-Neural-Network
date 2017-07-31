@@ -176,6 +176,8 @@ The model was able to correctly guess 3 of the 5 traffic signs, which gives an a
 
 ***The probabilities for each new sign are as follows:***
 
+---
+
 ***Image 1: Speed limit (30km/h)***
 
 
@@ -187,5 +189,60 @@ The model was able to correctly guess 3 of the 5 traffic signs, which gives an a
 |Stop                       |      0.0000000000%|
 |Speed limit (60km/h)       |      0.0000000000%|
 
+---
 
-For the second image ... 
+***Image 2: Yield***
+
+
+| Prediction        	|     Probability        					| 
+|:---------------------:|:---------------------------------------------:| 
+|Yield                    |      100.0000000000%|
+|Speed limit (20km/h)      |       0.0000000000%|
+|Speed limit (30km/h)       |      0.0000000000%|
+|Speed limit (50km/h)        |     0.0000000000%|
+|Speed limit (60km/h)         |    0.0000000000%|
+
+---
+
+***Image 3: Stop***
+
+
+| Prediction        	|     Probability        					| 
+|:---------------------:|:---------------------------------------------:| 
+|Speed limit (30km/h)   |         99.9953508377%|
+|Stop                    |         0.0033806267%|
+|Yield                    |        0.0012675282%|
+|Speed limit (50km/h)      |       0.0000002531%|
+|Keep left                  |      0.0000000453%|
+
+---
+
+***Image 4: Speed limit (70km/h)***
+
+
+| Prediction        	|     Probability        					| 
+|:---------------------:|:---------------------------------------------:| 
+|Speed limit (30km/h)   |         99.9999403954%|
+|Speed limit (60km/h)    |         0.0000351977%|
+|Stop                     |        0.0000248258%|
+|Speed limit (70km/h)      |       0.0000027374%|
+|Turn right ahead           |      0.0000000031%|
+
+---
+
+***Image 5: Speed limit (120km/h)***
+
+
+| Prediction        	|     Probability        					| 
+|:---------------------:|:---------------------------------------------:| 
+|Speed limit (120km/h)     |      73.9777505398%|
+|Speed limit (20km/h)       |     22.8198796511%|
+|Speed limit (30km/h)        |     2.8353558853%|
+|Go straight or right         |    0.2367284149%|
+|Keep right                    |   0.0944264291%|
+
+---
+
+***Conclusion:***
+
+***Overall I am pleased with the testing and validation accuracy. I am a little suprised with my new images not doing as well, but the features are being recognized, as evidenced by the probabilities of the correct sign being in the top 5 results. This was a cool exploration into the world of neural networks, and I hope to use what I learned here to make even better models in the future. 
