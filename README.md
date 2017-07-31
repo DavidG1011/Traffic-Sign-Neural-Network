@@ -228,6 +228,10 @@ I made sure to crop the images as best as possible to reduce outer edge noise, s
 
 ***The model was able to correctly guess 3 of the 5 traffic signs, which gives an accuracy of 60%***
 
+---
+
+
+**Comparing These Results To Test Set Results***
 
 
 | Test Set Accuracy		 | Prediction Accuracy | Difference |
