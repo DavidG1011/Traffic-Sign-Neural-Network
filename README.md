@@ -231,7 +231,7 @@ I made sure to crop the images as best as possible to reduce outer edge noise, s
 ---
 
 
-**Comparing These Results To Test Set Results***
+**Comparing These Results To Test Set Results**
 
 
 | Test Set Accuracy		 | Prediction Accuracy | Difference |
