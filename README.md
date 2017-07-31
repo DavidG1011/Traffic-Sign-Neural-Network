@@ -1,8 +1,4 @@
-#**Traffic Sign Recognition** 
-
-##Writeup Template
-
-###You can use this file as a template for your writeup if you want to submit it as a markdown file, but feel free to use some other method and submit a pdf if you prefer.
+**Traffic Sign Recognition Writeup** 
 
 ---
 
@@ -27,9 +23,17 @@ The goals / steps of this project are the following:
 [image6]: ./examples/placeholder.png "Traffic Sign 3"
 [image7]: ./examples/placeholder.png "Traffic Sign 4"
 [image8]: ./examples/placeholder.png "Traffic Sign 5"
+[image9]: ./New Images/writeup/gray.png "Grayscaled Image"
 
-## Rubric Points
-###Here I will consider the [rubric points](https://review.udacity.com/#!/rubrics/481/view) individually and describe how I addressed each point in my implementation.  
+**Rubric Points:**
+
+The rubric covered [Here](https://review.udacity.com/#!/rubrics/481/view) was the basis for the approach to this project. 
+
+**1. Preprocessing:**
+In order to reduce the amount of image data and ease the process of training, I used the preprocessing methods of grayscaling and normalization. 
+
+**Gray:**
+![alt text][image9]
 
 ---
 ###Writeup / README
