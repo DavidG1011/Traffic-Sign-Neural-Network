@@ -24,6 +24,9 @@ The goals / steps of this project are the following:
 [image7]: ./New_Images/8.jpg "Image 3"
 [image8]: ./New_Images/13.jpg "Image 4"
 [image9]: ./New_Images/14.jpg "Image 5"
+[image10]: ./New_Images/stop32.jpg "Stop 32x32"
+[image11]: ./New_Images/yield32.jpg "Yield 32x32"
+
 
 
 **Rubric Points:**
@@ -97,7 +100,7 @@ The final model I decided on was:
 | Convolution | In 120, Out 84 |
 | RELU |                      |
 | Dropout Layer | Probability 0.5 | 
-| Convolution | In 84, Out 42: (Number of Classes) | 
+| Convolution | In 84, Out 43: (Number of Classes) | 
  
 
 **Training The Model**
@@ -160,6 +163,35 @@ The 5 new images I used for testing:
 
 
 ---
+
+***Image Quality: Here Comes The Fuzz:***
+
+A difficulty I faced using these images is that some are quite big, even when cropped from their original size. Cropping these large images down further to only 32x32 has made them very compressed, and possibly made it hard for the network to discern characteristics for these specific images.
+
+Comparing these images to their originals above, it can be seen that cropping these images vastly changes the data of it.
+
+---
+
+
+![alt text][image10]
+![alt text][image11]
+
+
+---
+
+***How Resizing Changes An Image Numerically***
+
+
+| Original Image Size (pixels)		        |   Resize Pixel Loss X   | Resize Pixel Loss Y |
+|:---------------------:|:-------------------:|:--------------------------:| 
+| Speed limit (30km/h) - 122 x 119     		| ~73.77%							| ~73.11%         |
+| Yield  - 297x 263 		                  	| ~89.23%							| ~87.83%         |
+| Stop - 498 x 455				                   | ~93.57%							| ~92.97%         | 
+| Speed limit (70km/h) - 	56 x 52      		| ~42.86%				 	 | ~38.46%         |
+| Speed limit (120km/h) - 119 x 100			   | ~73.11%   		  | ~68.0%          |
+
+
+
 ***The results I got from my predctions were as follows:***
 
 
