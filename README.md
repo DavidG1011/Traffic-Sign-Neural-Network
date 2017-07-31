@@ -24,8 +24,8 @@ The goals / steps of this project are the following:
 [image7]: ./New_Images/8.jpg "Image 3"
 [image8]: ./New_Images/13.jpg "Image 4"
 [image9]: ./New_Images/14.jpg "Image 5"
-[image10]: ./New_Images/stop32.jpg "Stop 32x32"
-[image11]: ./New_Images/yield32.jpg "Yield 32x32"
+[image10]: ./New_Images/stop32.png "Stop 32x32"
+[image11]: ./New_Images/yield32.png "Yield 32x32"
 
 
 
@@ -168,18 +168,19 @@ The 5 new images I used for testing:
 
 A difficulty I faced using these images is that some are quite big, even when cropped from their original size. Cropping these large images down further to only 32x32 has made them very compressed, and possibly made it hard for the network to discern characteristics for these specific images.
 
-Comparing these images to their originals above, it can be seen that cropping these images vastly changes the data of it.
+Comparing these images to their originals above, it can be seen that resizing these images vastly changes the data of it.
 
 ---
 
 
 ![alt text][image10]
+
 ![alt text][image11]
 
 
 ---
 
-***How Resizing Changes An Image Numerically***
+***How Resizing to 32x32 Changes An Image Numerically***
 
 
 | Original Image Size (pixels)		        |   Resize Pixel Loss X   | Resize Pixel Loss Y |
@@ -191,6 +192,10 @@ Comparing these images to their originals above, it can be seen that cropping th
 | Speed limit (120km/h) - 119 x 100			   | ~73.11%   		  | ~68.0%          |
 
 
+Looking at these losses, it's easy to see how the network may have difficulty identifying these images. For example, the stop sign image lost over 93% of its original X pixel value and almost 93% of its original Y pixel value. These high loss resized images could contribute to my findings for prediction accuracy...
+
+
+---
 
 ***The results I got from my predctions were as follows:***
 
@@ -204,7 +209,20 @@ Comparing these images to their originals above, it can be seen that cropping th
 |  Speed limit (120km/h)			| Speed limit (120km/h)     							| Yes|
 
 
-The model was able to correctly guess 3 of the 5 traffic signs, which gives an accuracy of 60%. This is not as well as I had hoped the model would do, but in viewing the probability distribution for the model, the correct prediction is within the top 5 probabilities of each wrong image.
+
+The model was able to correctly guess 3 of the 5 traffic signs, which gives an accuracy of 60%
+
+
+
+| Test Set Accuracy		 | Prediction Accuracy | Difference |
+|:-------------------:|:--------------------:|:---------:| 
+| 94.3%               | 60%                  |  - 34.3%  |
+
+
+Comparing to my test set accuracy, it performed unfavorably with a 34.3% difference in accuracy. I feel this could be due to how lossy the images were once compressed down to 32x32. If I were to select images again, I would try to find ones with a smaller original size, to reduce the amount of compression. Using different resizing methods in python and using methods such as antialiasing seemed to make no difference in accuracy.
+
+
+This is not as well as I had hoped the model would do, but in viewing the probability distribution for the model, the correct prediction is within the top 5 probabilities of each wrong image.
 
 ---
 
