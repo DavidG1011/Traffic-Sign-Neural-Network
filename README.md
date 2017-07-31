@@ -140,9 +140,11 @@ My final model results were:
 * Next, I retested my model on the validation set only to notice a still low validation accuracy. 
 * From here I realized that my model was overfitting. To counter this, I added two dropout layers with a 50% keep probability. Tuning my models learning rate, I finally achieved an acceptable accuracy of 96.281%
 
-**Testing The Model On New Images***
+***Testing The Model On New Images***
 
-Here are five German traffic signs that I found on the web:
+
+The 5 new images I used for testing:
+
 ---
 
 
